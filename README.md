@@ -2,7 +2,7 @@
 ###Purpose of Application
 >The purpose of the application is to allow for a user/company to easily manage customers and the appointments without directly modifying the database.
 >The Guidelines used to create the application are described in the scenario below.
-####Scenario
+###Scenario
 >"You are working for a software company that has been contracted to develop a GUI-based scheduling desktop application. The contract is with a global consulting organization that conducts business in multiple languages and has main offices in Phoenix, Arizona; White Plains, New York; Montreal, Canada; and London, England. The consulting organization has provided a MySQL database that the application must pull data from. The database is used for other systems, so its structure cannot be modified."
 
 >"The organization outlined specific business requirements that must be met as part of the application. From these requirements, a system analyst at your company created solution statements for you to implement in developing the application. These statements are listed in the requirements section."
@@ -32,12 +32,12 @@
 
 >mysql-connector-java-5.1.40-bin
 
-###How to run application
+##How to run application
 >Application is ran through Main method located in the Views folder
 >
 >
 
-####Additional Report Details
+##Additional Report Details
 >For my third report I've decided to list all the appointments per customer. 
 >If a customer isn't assigned to an appointment then it will not populate on the table.
 >As with the other 2 reports I used a tableview to retrieve details from the database.
