@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Views.LoginController">
+    <left>
+        <AnchorPane prefHeight="800.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="400.0" fitWidth="313.0" layoutX="-113.0" layoutY="-1.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@../scd.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </left>
+    <center>
+        <AnchorPane prefHeight="400.0" prefWidth="330.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="userIdTextLbl" layoutX="18.0" layoutY="100.0" prefHeight="17.0" prefWidth="119.0" text="Username" />
+                <TextField fx:id="userIdTextField" layoutX="132.0" layoutY="96.0" prefHeight="25.0" prefWidth="152.0" />
+                <Label fx:id="enterPasswordLbl" layoutX="17.0" layoutY="160.0" prefHeight="17.0" prefWidth="91.0" text="Password" />
+                <Button fx:id="submitButton" layoutX="166.0" layoutY="200.0" mnemonicParsing="false" onAction="#tryLogin" text="Submit" />
+                <PasswordField fx:id="enterPasswordTextField" layoutX="130.0" layoutY="156.0" prefHeight="25.0" prefWidth="156.0" />
+                <Label fx:id="language" alignment="CENTER" layoutX="21.0" layoutY="284.0" prefHeight="17.0" prefWidth="242.0" text="Your default language is English" textFill="RED" />
+                <TextField fx:id="countryCode" editable="false" layoutX="220.0" layoutY="361.0" prefHeight="25.0" prefWidth="64.0" />
+            <Label fx:id="signInLabel" alignment="CENTER" layoutX="107.0" layoutY="23.0" prefHeight="42.0" prefWidth="153.0" text="Login">
+               <font>
+                  <Font size="33.0" />
+               </font></Label>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>

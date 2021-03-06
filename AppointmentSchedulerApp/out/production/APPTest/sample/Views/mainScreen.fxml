@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="508.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Views.mainScreenController">
+   <left>
+      <AnchorPane prefHeight="800.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="313.0" layoutX="-113.0" layoutY="-1.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../scd.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="400.0" prefWidth="317.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="customerID" layoutX="63.0" layoutY="87.0" mnemonicParsing="false" onAction="#openCustomerMenu" prefHeight="25.0" prefWidth="182.0" text="Customers" textFill="#020099" />
+            <Button fx:id="aptMenu" layoutX="63.0" layoutY="130.0" mnemonicParsing="false" onAction="#openAptMenu" prefHeight="25.0" prefWidth="182.0" text="Appointments" textFill="#020099" />
+            <Button fx:id="reports" layoutX="63.0" layoutY="174.0" mnemonicParsing="false" onAction="#openReportsMenu" prefHeight="25.0" prefWidth="182.0" text="Reports" textFill="#020099" />
+            <Label alignment="CENTER" layoutX="27.0" layoutY="14.0" prefHeight="50.0" prefWidth="268.0" text="Main Menu">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="exit" layoutX="237.0" layoutY="359.0" mnemonicParsing="false" onAction="#exitApp" prefHeight="26.0" prefWidth="58.0" text="Exit" textFill="#020099" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

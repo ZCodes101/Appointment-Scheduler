@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="581.0" prefWidth="1222.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Views.aptMainScreenController">
+   <children>
+      <Button layoutX="23.0" layoutY="511.0" mnemonicParsing="false" onAction="#addApt" prefHeight="26.0" prefWidth="149.0" text="Add Appointment" />
+      <Button layoutX="193.0" layoutY="511.0" mnemonicParsing="false" onAction="#modApt" prefHeight="26.0" prefWidth="149.0" text="Update Appointment" />
+      <Button layoutX="368.0" layoutY="511.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="149.0" text="Delete" />
+      <Button fx:id="exitButton" layoutX="809.0" layoutY="537.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="149.0" text="Back" />
+      <AnchorPane layoutX="21.0" layoutY="23.0" prefHeight="428.0" prefWidth="937.0">
+         <children>
+            <Label alignment="CENTER" layoutX="336.0" layoutY="42.0" prefHeight="18.0" prefWidth="234.0" text="Overview">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="weekMonthLbl" alignment="CENTER" layoutX="336.0" layoutY="9.0" prefHeight="18.0" prefWidth="234.0">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <TabPane layoutY="70.0" prefHeight="395.0" prefWidth="978.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab fx:id="monthTab" text="Monthly Appointments">
+                     <content>
+                        <TableView fx:id="allAptTble" prefHeight="366.0" prefWidth="975.0">
+                          <columns>
+                            <TableColumn fx:id="aptID" prefWidth="100.0" text="Appointment ID" />
+                            <TableColumn fx:id="title" prefWidth="76.0" text="Title" />
+                              <TableColumn fx:id="description" text="Description" />
+                              <TableColumn fx:id="location" prefWidth="108.0" text="Location" />
+                              <TableColumn fx:id="contact" prefWidth="119.0" text="Contact Name" />
+                              <TableColumn fx:id="type" prefWidth="96.0" text="Type" />
+                              <TableColumn fx:id="start" prefWidth="138.0" text="Start" />
+                              <TableColumn fx:id="end" prefWidth="130.0" text="End" />
+                              <TableColumn fx:id="customerID" prefWidth="131.0" text="Customer ID" />
+                          </columns>
+                        </TableView>
+                     </content></Tab>
+                <Tab fx:id="weekTab" text="Weekly Appointments">
+                     <content>
+                        <TableView fx:id="allAptTbleWk" prefHeight="328.0" prefWidth="917.0">
+                           <columns>
+                              <TableColumn fx:id="AptIDwk" prefWidth="107.0" text="Appointment ID" />
+                              <TableColumn fx:id="titleWk" prefWidth="69.0" text="Title" />
+                              <TableColumn fx:id="descWk" text="Description" />
+                              <TableColumn fx:id="locationWk" prefWidth="108.0" text="Location" />
+                              <TableColumn fx:id="cNmaeWk" prefWidth="119.0" text="Contact Name" />
+                              <TableColumn fx:id="typeWk" prefWidth="96.0" text="Type" />
+                              <TableColumn fx:id="startWk" prefWidth="128.0" text="Start" />
+                              <TableColumn fx:id="endWk" prefWidth="127.0" text="End" />
+                              <TableColumn fx:id="custIDWk" prefWidth="144.0" text="Customer ID" />
+                           </columns>
+                        </TableView>
+                     </content></Tab>
+                  <Tab fx:id="allAptTab" text="All Appointments">
+                     <content>
+                        <TableView fx:id="allTable" prefHeight="328.0" prefWidth="917.0">
+                           <columns>
+                              <TableColumn fx:id="allAptID" prefWidth="107.0" text="Appointment ID" />
+                              <TableColumn fx:id="allTitle" prefWidth="69.0" text="Title" />
+                              <TableColumn fx:id="allDesc" text="Description" />
+                              <TableColumn fx:id="allLocation" prefWidth="108.0" text="Location" />
+                              <TableColumn fx:id="allContactName" prefWidth="119.0" text="Contact Name" />
+                              <TableColumn fx:id="allType" prefWidth="96.0" text="Type" />
+                              <TableColumn fx:id="allStart" prefWidth="128.0" text="Start" />
+                              <TableColumn fx:id="allEnd" prefWidth="127.0" text="End" />
+                              <TableColumn fx:id="allCustID" prefWidth="144.0" text="Customer ID" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutX="205.0" layoutY="14.0" prefHeight="40.0" prefWidth="564.0" text="Appointment Management">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <TableView fx:id="cTableView" editable="true" layoutX="1008.0" layoutY="123.0" prefHeight="359.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="ctID" editable="false" prefWidth="101.0" text="Customer ID" />
+          <TableColumn fx:id="ctName" editable="false" prefWidth="98.0" text="Name" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="1026.0" layoutY="99.0" prefHeight="17.0" prefWidth="165.0" text="Existing Customers" />
+   </children>
+</AnchorPane>
